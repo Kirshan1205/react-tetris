@@ -4,7 +4,8 @@
   "description": "使用React、Redux、Immutable编写「俄罗斯方块」。Use Tetact, Redux, Immutable to coding \"Tetris\".",
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "build": "rm -rf ./docs/* && webpack --config ./webpack.production.config.js --progress && ls ./docs"
+    "build": "rm -rf ./docs/* && webpack --config ./webpack.production.config.js --progress && ls ./docs",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
@@ -63,6 +64,6 @@
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
-    "redux-immutable": "^3.0.8"
+    "redux-immutable": "^3.0.8",
   }
 }
